@@ -1,11 +1,53 @@
-header {
-    background-color: #4E9DA6;
-    height: 100%;
-       
-}
-body {
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap');
+
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-nav {
-    background-color: #c9a73ef9;
+
+:root{
+    --primary-color: #4E9DA0;
+    --second-color: #6AD9D9;
+    --black-color: #0A0D0D;
+    --yellow-color: #D9AE30;
+    --white-color: #f2f2f2;
 }
+
+.container{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header{
+    background-color: var(--primary-color);
+    height: 100px;
+    width: 100vw;
+    display: flex; 
+    justify-content: space-between;  
+    align-items: center;
+}
+
+.logo{
+    width: 180px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px; 
+}
+
+li, a{
+    color: var(--white-color);
+    text-decoration: none;
+    list-style: none;
+}
+
+
