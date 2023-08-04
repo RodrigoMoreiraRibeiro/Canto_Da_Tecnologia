@@ -41,13 +41,14 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 35px; 
+    
 }
 
 li, a{
     color: var(--white-color);
     text-decoration: none;
     list-style: none;
+    padding-right: 50px;
 }
 
 
