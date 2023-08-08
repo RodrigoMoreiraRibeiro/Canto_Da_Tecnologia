@@ -18,12 +18,11 @@
 }
 
 .container{
-    width: 1400px;
+    width: 1200px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    
 }
 
 header{
@@ -36,60 +35,32 @@ header{
 }
 
 .logo{
-
-    width: 180px;
+    height: 100px;
 }
 
-ul{
-    display: flex;
-    align-items: center;
-    
-    
-}
-
-li, a{
-    color: var(--white-color);
-    text-decoration: none;
+header nav ul li{
     list-style: none;
-    padding: 30px;
 }
 
-nav li a:hover{
-    color: var(--yellow-color);
+header nav ul li a{
+    width: 120px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 10px;
+    transition: all 0.3s linear;
+    border-bottom: 4px solid var(--primary-color);
 }
 
-.titulo {
-
-    
-    text-align: center;
-    color: #D9AE30;
-    font-family: Poppins;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-top: 60px;
-
+nav ul{
+    display: flex;
+    gap: 30px;
 }
 
-h2 {
-
-    text-align: center;
-    color: #000;
-    font-family: Poppins;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
+header nav ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid var(--yellow-color);
 }
-
-select{
-
-    text-align: center;
-    
-    
-}
-
-
-
