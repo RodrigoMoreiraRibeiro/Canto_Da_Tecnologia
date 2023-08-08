@@ -17,12 +17,13 @@
     --white-color: #f2f2f2;
 }
 
-.container{
+.header-container{
     width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 75px;
 }
 
 header{
@@ -64,3 +65,4 @@ header nav ul li a:hover{
     background-color: rgba(0, 0, 0, 0.1);
     border-bottom: 4px solid var(--yellow-color);
 }
+

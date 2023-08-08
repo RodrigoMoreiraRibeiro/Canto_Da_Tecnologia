@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/menu.css">
     <title>Canto Da Tecnologia</title>
 </head>
 <body>
-    <header>
-            <div class="container">
-                <div>
-                    <a href="/"><img class="logo" src="Images/logo.png"></a>
+    <header class="header">
+            <div class="header-container">
+                <div class="container-logo">
+                    <a href="/"><img class="logo" src="src/Images/logo.png"></a>
                 </div>
-                <div>
+                
                     <nav>
-                        <ul>
+                        <input type="checkbox" id="menu-hamburguer">
+
+                        <label for="menu-hamburguer">
+                            <div class="menu">
+                                <span class="hamburguer"></span>
+                            </div>
+                        </label>
+
+                        <ul id="height">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Categoria</a></li>
                             <li><a href="#">Sobre</a></li>
                             <li><a href="#">Contato</a></li>
                         </ul>
                     </nav>
-                </div>
+                
             </div>
     </header>
 </body>
