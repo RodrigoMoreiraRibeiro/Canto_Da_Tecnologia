@@ -99,7 +99,15 @@
         /* color: #000; */
     }
     
-    *{
+    /* *{
+        height: auto;
+    } */
+
+    /* #height li{
+        height: auto;
+    } */
+
+    nav{
         height: auto;
     }
 
