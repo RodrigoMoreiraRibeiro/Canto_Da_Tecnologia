@@ -6,11 +6,11 @@
     height: 100%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 :root{
-    --primary-color: #4E9DA0;
+    --primary-color: #515757;
     --second-color: #6AD9D9;
     --black-color: #0A0D0D;
     --yellow-color: #D9AE30;
@@ -44,7 +44,7 @@ header nav ul li{
 }
 
 header nav ul li a{
-    width: 120px;
+    width: 130px;
     display: inline-block;
     display: flex;
     justify-content: center;
