@@ -75,11 +75,13 @@ header nav ul li a:hover{
     position: relative;
     justify-content: center;
     align-items: center;
+    
 }
 
 .slider li {
     list-style: none;
     position: absolute;
+    width: 70vw;
 }
 
 .slider img {
@@ -102,18 +104,19 @@ header nav ul li a:hover{
     position: absolute;
     width: 10px;
     z-index: 10;
+    border-radius: 50%;
 }
 
 .slider li:nth-child(1) label {
-    left: 35px;
+    left: 25px;
 }
 
 .slider li:nth-child(2) label {
-    left: 140px;
+    left: 50px;
 }
 
 .slider li:nth-child(3) label {
-    left: 295px;
+    left: 75px;
 }
 
 .slider img {
@@ -140,14 +143,14 @@ header nav ul li a:hover{
     }
 
     .slider li:nth-child(1) label {
-        left: 35px;
+        left: 25px;
     }
     
     .slider li:nth-child(2) label {
-        left: 127px;
+        left: 50px;
     }
     
     .slider li:nth-child(3) label {
-        left: 170px;
+        left: 75px;
     }
 }
