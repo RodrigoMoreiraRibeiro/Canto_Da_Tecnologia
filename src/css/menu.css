@@ -1,5 +1,6 @@
 .header nav{
     display: flex;
+    
 }
 
 /* RESPONSIVO*/
@@ -14,6 +15,7 @@
 .header nav label{
     display: flex;
     flex-direction: column;
+    
 }
 
 .header .hamburguer{
@@ -109,12 +111,14 @@
         height: auto;
     } */
 
+  
     nav{
         height: auto;
     }
 
     .container-logo{
         overflow: auto;
+        width: 100vw;
     }
 
     .container-logo a img{
