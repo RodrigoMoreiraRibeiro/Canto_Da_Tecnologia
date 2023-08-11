@@ -94,8 +94,10 @@
     .header nav ul a{
         text-align:center;
         padding: 20px;
+        margin: auto;
         display:block;
         color: #fff;
+        
         /* color: #000; */
     }
     
