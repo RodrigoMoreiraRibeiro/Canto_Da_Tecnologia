@@ -118,7 +118,7 @@
 
     .container-logo{
         overflow: auto;
-        width: 100vw;
+        width: 100%;
     }
 
     .container-logo a img{
