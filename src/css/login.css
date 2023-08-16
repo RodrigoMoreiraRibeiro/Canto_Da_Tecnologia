@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+}
+
+.login-area form div img{
+    width: 20px;
+}
+
+.background{
+    width: 60vw;
+    height: 100vh;
+    background-color: brown;
+}
+
+.login-area{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    width: 350px;
+    height: 400px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.login-box form div{   
+    padding: 15px 0px;
+}
+
+.email{
+    position: relative;
+}
+
+.email label{
+    position: absolute;
+}
+
+.password{
+    position: relative;
+}
+
+.password label{
+    position: absolute;
+}
