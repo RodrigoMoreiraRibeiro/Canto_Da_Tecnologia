@@ -15,22 +15,17 @@
 
         <div class="login-box">
             <h1>Login</h1>
-            <form action="POST">
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+            <form method="post">
+                <div class="input-box">
                     <img src="src/icon/user.png">
+                    <input type="email" name="email" id="email" placeholder="Nome" required>
                 </div>
-                <div class="password">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" required>
+                <div class="input-box">
                     <img src="src/icon/lock.png">
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
                 </div>
                 <div class="button">
                     <input type="button" value="Entrar">
-                </div>
-                <div class="checkbox">
-                    <input type="checkbox"><p>Lembre-me</p>
                 </div>
                 <div class="register">
                     <p>Não tem cadastro? <a href="#">Cadastre-se</a></p>

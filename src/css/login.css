@@ -12,7 +12,7 @@ body{
 }
 
 .login-area form div img{
-    width: 20px;
+    width: 15px;
 }
 
 .background{
@@ -29,32 +29,94 @@ body{
     align-items: center;
 }
 
+.login-box h1{
+    color: silver;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* LOGIN AREA */
+
 .login-box{
     width: 350px;
     height: 400px;
-    background-color: brown;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
 }
 
-.login-box form div{   
-    padding: 15px 0px;
+.login-box input{
+    width: 270px;   
 }
 
-.email{
+form{
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+
+.input-box{
     position: relative;
 }
 
-.email label{
-    position: absolute;
+.input-box input{
+    gap: 30px;
 }
 
-.password{
-    position: relative;
+.input-box img{
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
 }
 
-.password label{
-    position: absolute;
+.input-box input::placeholder{
+    text-indent: 10px;
+    color: silver;
+    letter-spacing: 2px;
+}
+
+.input-box{
+    border-bottom: 1px solid silver;
+}
+
+.input-box input{
+    border: none;
+    outline: none;
+    background: transparent;
+    text-indent: 10px;
+    letter-spacing: 2px;
+}
+
+[type=button]{
+    cursor: pointer;
+    border: none;
+    background-color: silver;
+    padding: 5px 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.5s linear;
+}
+
+[type=button]:hover{
+    background-color: rgb(0, 186, 127);
+}
+
+.register p{
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: silver;
+}
+
+.register p a{
+    text-decoration: none;
+    color: silver;
+    transition: all 0.5s linear;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+    color: rgb(0, 186, 127);
 }
