@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="src/css/login.css">
 </head>
 <body>
-    <section class="background">
+    <!-- <section class="background">
 
-    </section>
+    </section> -->
 
     <section class="login-area">
 
@@ -35,6 +35,52 @@
                 <div class="register">
                     <p>Não tem cadastro? <a href="#">Cadastre-se</a></p>
                 </div>
+            </form>
+        </div>
+        
+    </section>
+
+    <section class="cadastro-area">
+
+        <div class="cadastro-box">
+            <h1>Cadastro</h1>
+            <form action="POST">
+                <div class="name">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required>
+
+                </div>
+                <div class="sobrenome">
+                    <label for="name">Úlimo sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    
+                </div>
+                <div class="password">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" required>
+                    
+                </div>
+
+                <div class="password">
+                    <label for="password">Confirma sua senha</label>
+                    <input type="password" name="password" id="password" required>
+                    
+                </div>
+                
+                <div class="checkbox">
+                    <input type="checkbox"><p class="p3">Aceite os termos</p>
+                </div>
+
+                <div class="button">
+                    <input type="button" value="Cadastrar">
+                </div>
+                
+                
             </form>
         </div>
         

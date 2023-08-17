@@ -16,31 +16,60 @@ body{
 }
 
 .background{
-    width: 60vw;
+    width: 100vw;
     height: 100vh;
-    background-color: brown;
+    background: url(../Images/Sharing\ Ideas-bro.svg) no-repeat center center;
+    
+    
+    
+
 }
 
 .login-area{
-    width: 40vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(../Images/lamp4.jpg);
+    
+    
+
 }
 
 .login-box{
     width: 350px;
     height: 400px;
-    background-color: brown;
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+    
+    
 }
 
 .login-box form div{   
     padding: 15px 0px;
+}
+
+.name {
+    position: relative;
+}
+
+.name label {
+    position: absolute;
+}
+
+.sobrenome {
+    position: relative;
+}
+
+.sobrenome label {
+    position: absolute;
 }
 
 .email{
@@ -57,4 +86,40 @@ body{
 
 .password label{
     position: absolute;
+}
+
+.cadastro-box form div{   
+    padding: 15px 0px;
+}
+
+
+.cadastro-box{
+    width: 350px;
+    height: 450px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.cadastro-area{
+    width: 40vw;
+    height: 100vh;
+    display: none;
+    /* display: none;  */
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/lamp.jpg);
+
+}
+
+
+
+.checkbox {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 10px;
+    
 }
