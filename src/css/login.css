@@ -106,7 +106,7 @@ body{
 .cadastro-area{
     width: 40vw;
     height: 100vh;
-    display: none;
+    /* display: none; */
     /* display: none;  */
     justify-content: center;
     align-items: center;
