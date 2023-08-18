@@ -16,20 +16,31 @@ body{
 }
 
 .background{
-    width: 60vw;
+    width: 100vw;
     height: 100vh;
-    background-color: brown;
+    background: url(../Images/Sharing\ Ideas-bro.svg) no-repeat center center;
+    
+    
+    
+
 }
 
 .login-area{
-    width: 40vw;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     background-image: url(../Images/universe-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+=======
+    background: url(../Images/lamp4.jpg);
+    
+    
+
+>>>>>>> 938489f1a709a0466bc48dd138a3baa7546ef18b
 }
 
 .bg-alpha{
@@ -63,18 +74,29 @@ body{
     position: absolute;
     z-index: 1;
     width: 350px;
+<<<<<<< HEAD
     height: 500px;
     background-color: rgba(255, 255, 255, 0.9);
+=======
+    height: 400px;
+    background-color: transparent;
+>>>>>>> 938489f1a709a0466bc48dd138a3baa7546ef18b
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 1px 0px 1.2px 0px #e3e3e3;
+    
+    
 }
 
 .login-box input{
     width: 270px;   
 }
 
+<<<<<<< HEAD
 form{
     display: flex;
     flex-flow: column;
@@ -82,6 +104,25 @@ form{
 }
 
 .input-box{
+=======
+.name {
+    position: relative;
+}
+
+.name label {
+    position: absolute;
+}
+
+.sobrenome {
+    position: relative;
+}
+
+.sobrenome label {
+    position: absolute;
+}
+
+.email{
+>>>>>>> 938489f1a709a0466bc48dd138a3baa7546ef18b
     position: relative;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
@@ -106,6 +147,7 @@ form{
 
 .input-box label{
     position: absolute;
+<<<<<<< HEAD
     top: 50%;
     left: 9px;
     transform: translateY(-50%);
@@ -191,4 +233,42 @@ form{
 
 .register p a:hover{
     color: rgb(0, 186, 127);
+=======
+}
+
+.cadastro-box form div{   
+    padding: 15px 0px;
+}
+
+
+.cadastro-box{
+    width: 350px;
+    height: 450px;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.cadastro-area{
+    width: 40vw;
+    height: 100vh;
+    /* display: none; */
+    /* display: none;  */
+    justify-content: center;
+    align-items: center;
+    background: url(../Images/lamp.jpg);
+
+}
+
+
+
+.checkbox {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 10px;
+    
+>>>>>>> 938489f1a709a0466bc48dd138a3baa7546ef18b
 }
