@@ -12,20 +12,34 @@
     </section>
 
     <section class="login-area">
-
+        <div class="bg-alpha"></div>
         <div class="login-box">
-            <h1>Login</h1>
+            <div class="title">
+                <img src="src/Images/logo3.png">
+                <h1>Login</h1>
+            </div>
             <form method="post">
                 <div class="input-box">
                     <img src="src/icon/user.png">
-                    <input type="email" name="email" id="email" placeholder="Nome" required>
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
                 </div>
                 <div class="input-box">
                     <img src="src/icon/lock.png">
-                    <input type="password" name="password" id="password" placeholder="Senha" required>
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Senha</label>
                 </div>
                 <div class="button">
                     <input type="button" value="Entrar">
+                </div>
+                <div class="icon-box">
+                    <a href="#"><img src="src/icon/logo-google.svg"></a>
+                    <a href="#"><img src="src/icon/logo-facebook.svg"></a>
+                    <a href="#"><img src="src/icon/logo-github.svg"></a>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Lembre-me</label>
                 </div>
                 <div class="register">
                     <p>Não tem cadastro? <a href="#">Cadastre-se</a></p>
