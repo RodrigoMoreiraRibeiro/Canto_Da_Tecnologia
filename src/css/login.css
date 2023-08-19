@@ -7,245 +7,191 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* SET BACKGROUND */
+
 body{
     display: flex;
-}
-
-.login-area form div img{
-    width: 15px;
-}
-
-.background{
-    width: 100vw;
-    height: 100vh;
-    background: url(../Images/Sharing\ Ideas-bro.svg) no-repeat center center;
 }
 
 .login-area{
     width: 100vw;
     height: 100vh;
+    background-image: url(../Images/bg-ideas.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../Images/universe-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background: url(../Images/lamp4.jpg);
 }
 
-.bg-alpha{
+.bg-filter{
+    width: inherit;
+    height: inherit;
     position: absolute;
-    z-index: 0;
-    width: 40vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 1024px){
+    .login-area{
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 425px){
+    .login-area{
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+}
+
+/* LOGIN BOX */
+
+.login-box{
+    width: 370px;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 30px;
+}
+
+@media (max-width: 374px){
+    .login-box{
+        width: 100vw;
+        height: 80vh;
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 0px;
+    }
+}
+
+/* TÍTULO */
 
 .title{
     display: flex;
-    align-items: center;
     flex-flow: column;
-    width: 270px;
-    margin-bottom: 30px;
+    align-items: center;
 }
 
 .title img{
-    width: 80px;
+    width: 100px;
 }
 
-.title h1{
-    color: rgb(0, 0, 0);
+/* FORM */
+
+.input-box input{
+    width: 280px;
+    height: 35px;
+    text-indent: 5px;
     letter-spacing: 2px;
-}
-
-/* LOGIN AREA */
-
-.login-box{
-    position: absolute;
-    z-index: 1;
-    width: 350px;
-    height: 500px;
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 400px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
     background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 1px 0px 1.2px 0px #e3e3e3;
-}
-
-.login-box input{
-    width: 270px;   
-}
-
-form{
-    display: flex;
-    flex-flow: column;
-    gap: 30px;
 }
 
 .input-box{
-.name {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);;
     position: relative;
 }
 
-.name label {
-    position: absolute;
-}
-
-.sobrenome {
-    position: relative;
-}
-
-.sobrenome label {
-    position: absolute;
-}
-
-.email{
-    position: relative;
-    border-bottom: 1px solid rgb(0, 0, 0);
-}
-
-.input-box input{
-    gap: 30px;
-}
-
+.input-box label,
 .input-box img{
     position: absolute;
-    right: 5%;
-    bottom: 20%;
-}
-
-.input-box input{
-    border: none;
-    outline: none;
-    background: transparent;
-    text-indent: 10px;
-    letter-spacing: 2px;
 }
 
 .input-box label{
-    position: absolute;
-    top: 50%;
-    left: 9px;
-    transform: translateY(-50%);
+    top: 15%;
+    left: 5px;
     pointer-events: none;
     letter-spacing: 2px;
-    color: rgba(0, 0, 0, 0.5);
-    transition: all 0.3s linear;
+    color: rgba(0, 0, 0, 0.8);
+    transition: all 0.1s linear;
+}
+
+.input-box img{
+    width: 17px;
+    top: 25%;
+    right: 5px;
+}
+
+.login-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .input-box input:focus~label,
 .input-box input:valid~label{
-    top: -10px;
-    font-size: 13px;
-    color: rgba(0, 0, 0, 0.9);
+    top: -15px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-[type=button]{
-    cursor: pointer;
+/* BUTTON */
+
+.button-box input{
+    width: 280px;
+    height: 35px;
     border: none;
-    background-color: silver;
-    padding: 5px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.8);
     letter-spacing: 2px;
     text-transform: uppercase;
-    border-radius: 2px;
-    transition: all 0.3s linear;
+    transition: all 0.1s linear;
 }
 
-[type=button]:hover{
-    background-color: rgb(0, 186, 127);
+.button-box input:hover{
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* ICON BOX */
 
 .icon-box{
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
-.icon-box a img{
-    transform: scale(1.6);
-    transition: all 0.3s linear;
+.icon-box img{
+    width: 30px;
 }
 
-.icon-box a img:hover{
-    transform: scale(1.9);
+.icon-box a{
+    transition: all 0.1s linear;
 }
 
-.checkbox{
-    width: 200px;
+.icon-box a:hover{
+    transform: scale(1.2);
+}
+
+/* FORGOT */
+
+.forgot{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
+    justify-content: space-between;
 }
 
-.checkbox input{
-    width: 15px;
-    cursor: pointer;
-}
-
-.checkbox label{
-    cursor: pointer;
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: rgb(0, 0, 0);
-    transition: all 0.3s linear;
-}
-
-.checkbox label:hover{
-    color: rgb(0, 186, 127);
-}
-
-.register p{
-    font-size: 13px;
-    letter-spacing: 2px;
-    color: rgb(0, 0, 0);
-}
-
-.register p a{
+.forgot a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    transition: all 0.3s linear;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    transition: all 0.1s linear;
 }
 
-.register p a:hover{
-    color: rgb(0, 186, 127);
-}
-
-.cadastro-box form div{   
-    padding: 15px 0px;
-}
-
-
-.cadastro-box{
-    width: 350px;
-    height: 450px;
-    background-color: brown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-
-.cadastro-area{
-    width: 40vw;
-    height: 100vh;
-    /* display: none; */
-    /* display: none;  */
-    justify-content: center;
-    align-items: center;
-    background: url(../Images/lamp.jpg);
-}
-
-
-
-.checkbox {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    gap: 10px;
+.forgot a:hover{
+    background-color: rgba(255, 255, 255, 0.4);
 }

@@ -3,98 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
     <link rel="stylesheet" href="src/css/login.css">
+    <title>Página de Login</title>
 </head>
 <body>
-    <!-- <section class="background">
-
-    </section> -->
 
     <section class="login-area">
-        <div class="bg-alpha"></div>
+        <div class="bg-filter"></div>
+
         <div class="login-box">
+            
             <div class="title">
                 <img src="src/Images/logo3.png">
                 <h1>Login</h1>
             </div>
+
             <form method="post">
                 <div class="input-box">
-                    <img src="src/icon/user.png">
                     <input type="email" name="email" id="email" required>
                     <label for="email">Email</label>
+                    <img src="src/icon/user-icon.png">
                 </div>
                 <div class="input-box">
-                    <img src="src/icon/lock.png">
                     <input type="password" name="password" id="password" required>
-                    <label for="password">Senha</label>
+                    <label for="email">Senha</label>
+                    <img src="src/icon/password-icon.png">
                 </div>
-                <div class="button">
-                    <input type="button" value="Entrar" onclick="signIn()" class="entrar">
+                <div class="button-box">
+                    <input type="submit" value="entrar">
                 </div>
                 <div class="icon-box">
-                    <a href="#"><img src="src/icon/logo-google.svg"></a>
-                    <a href="#"><img src="src/icon/logo-facebook.svg"></a>
-                    <a href="#"><img src="src/icon/logo-github.svg"></a>
+                    <a href="#"><img src="src/icon/google-icon.png"></a>
+                    <a href="#"><img src="src/icon/facebook-icon.png"></a>
+                    <a href="#"><img src="src/icon/github-icon.png"></a>
                 </div>
-                <div class="checkbox">
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox">Lembre-me</label>
-                </div>
-                <div class="register">
-                    <p>Não tem cadastro? <a href="#" onclick="sign()">Cadastre-se</a></p>
+                <div class="forgot">
+                    <a href="#">Esqueceu sua senha?</a>
+                    <a href="#">Cadastre-se</a>
                 </div>
             </form>
+
         </div>
-        
+
     </section>
 
-    <!-- <section class="cadastro-area">
-
-        <div class="cadastro-box">
-            <h1>Cadastro</h1>
-            <form action="POST">
-                <div class="name">
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" id="name" required>
-
-                </div>
-                <div class="sobrenome">
-                    <label for="name">Úlimo sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome" required>
-
-                </div>
-                <div class="email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
-                    
-                </div>
-                <div class="password">
-                    <label for="password">Senha</label>
-                    <input type="password" name="password" id="password" required>
-                    
-                </div>
-
-                <div class="password">
-                    <label for="password">Confirma sua senha</label>
-                    <input type="password" name="password" id="password" required>
-                    
-                </div>
-                
-                <div class="checkbox">
-                    <input type="checkbox"><p class="p3">Aceite os termos</p>
-                </div>
-
-                <div class="button">
-                    <input type="button" value="Cadastrar">
-                </div>
-                
-                
-            </form>
-        </div>
-        
-    </section> -->
-
-    <script src="index.js"></script>
 </body>
 </html>
