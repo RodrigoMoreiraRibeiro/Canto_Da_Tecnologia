@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;600;700&family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SET BACKGROUND */
+
+body{
+    display: flex;
+}
+
+.login-area{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../Images/bg-ideas.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-filter{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px){
+    .login-area{
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 425px){
+    .login-area{
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+}
+
+/* LOGIN BOX */
+
+.login-box{
+    width: 370px;
+    height: 700px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 30px;
+}
+
+@media (max-width: 374px){
+    .login-box{
+        width: 100vw;
+        height: 80vh;
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 0px;
+    }
+}
+
+/* TÍTULO */
+
+.title{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.title img{
+    width: 100px;
+}
+
+/* FORM */
+
+.input-box input{
+    width: 280px;
+    height: 35px;
+    text-indent: 5px;
+    padding-right: 27px;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.input-box{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.input-box img{
+    position: absolute;
+}
+
+.input-box img{
+    width: 17px;
+    top: 25%;
+    right: 5px;
+}
+
+.input-box input::placeholder{
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.login-box form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gender fieldset{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.gender legend{
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.gender .gender-box{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 6px;
+}
+
+.gender .input-gender{
+    font-size: 14px;
+}
+
+.age{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.age label{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BUTTON */
+
+.button-box input{
+    width: 280px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.1s linear;
+}
+
+.button-box input:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* FORGOT */
+
+.forgot{
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 0px 5px;
+    border-radius: 5px;
+    transition: all 0.1s linear;
+}
+
+.forgot a:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}

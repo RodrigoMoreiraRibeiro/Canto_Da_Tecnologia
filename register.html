@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/register.css">
+    <title>Página de Registro</title>
+</head>
+<body>
+
+    <section class="login-area">
+        <div class="bg-filter"></div>
+
+        <div class="login-box">
+            
+            <div class="title">
+                <img src="src/Images/logo3.png">
+                <h1>Registro</h1>
+            </div>
+
+            <form method="post">
+                <div class="input-box">
+                    <input type="text" name="text" id="text" placeholder="Usuário" required>
+                    <img src="src/icon/user-icon.png">
+                </div>
+                <div class="input-box">
+                    <input type="email" name="text" id="text" placeholder="Email" required>
+                    <img src="src/icon/email-icon.png">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" placeholder="Senha" required>
+                    <img src="src/icon/password-icon.png">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" placeholder="Confirme a Senha" required>
+                    <img src="src/icon/password-icon.png">
+                </div>
+                <div class="gender">
+                    <fieldset>
+                        <legend>Gênero</legend>
+                        <div class="gender-box">
+                            <div class="input-gender">
+                                <input type="radio" name="gender" id="gender" >
+                                <label for="gender">M</label>
+                            </div>
+                            <div class="input-gender">
+                                <input type="radio" name="gender" id="gender" >
+                                <label for="gender">F</label>
+                            </div>
+                            <div class="input-gender">
+                                <input type="radio" name="gender" id="gender" >
+                                <label for="gender">Outro</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="age">
+                    <label for="age">Nascimento:</label>
+                    <input type="date" name="age" id="age">
+                </div>
+                <div class="button-box">
+                    <input type="submit" value="registrar">
+                </div>
+                <div class="forgot">
+                    <a href="#">Fazer Login?</a>
+                </div>
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
